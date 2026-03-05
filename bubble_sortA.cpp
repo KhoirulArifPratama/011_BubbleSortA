@@ -80,3 +80,11 @@ void display()
     cout << endl;
     cout << endl;
 }
+
+int main()
+{
+    input();
+    bubbleSortArray();
+    display();
+    return 0;
+}
