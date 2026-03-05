@@ -19,3 +19,9 @@ void input()
             cout << "Error! number should be in range of 1-20." << endl;
         }
     }
+
+    cout << endl;
+    cout << "-------------------" << endl;
+    cout << "Enter Array Element" << endl;
+    cout << "-------------------" << endl;
+}
