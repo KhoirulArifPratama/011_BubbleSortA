@@ -2,7 +2,7 @@
 #include <string>
 using namespace std; // Library
 
-int qarr[20]; // Deklarasi Variabel global
+int arr[20]; // Deklarasi Variabel global
 int n;
 
 void input()
@@ -28,6 +28,32 @@ void input()
     for (int i = 0; i < n; i++)
     {
         cout << "Enter element " << (i + 1) << ": ";
-        cin >> qarr[i];
+        cin >> arr[i];
     }
+}
+
+void bubbleSortArray()
+{
+    int pass = 1;
+
+    do
+    {
+        for (int i = 0; i < n - 1; i++)
+        {
+            if (arr[i] > arr[i + 1])
+            {
+                int temp = arr[i];
+                arr[i] = arr[i + 1];
+                arr[i + 1] = temp;
+            }
+        }
+        pass += 1;
+
+        cout << "\nPass " << pass - 1 << ": ";
+        for (int i = 0; i < n; i++)
+        {
+            cout << arr[i] << " ";
+        }
+
+    } while (pass <= n - 1);
 }
